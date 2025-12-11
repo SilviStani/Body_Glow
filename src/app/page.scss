@@ -1,0 +1,35 @@
+.page {
+  --softBeige: #f8f5f0;
+  --creamWhite: #F8F5F0;
+  --softBeige: #F2E9DD;
+  --lightSalmon: #F5C7B2;
+  --mutedGreen: #4F6F52;
+  --softSage: #94A89A;
+  --warmGray: #8F8F8F;
+
+  --text-primary: var(--mutedGreen);
+  --text-secondary: var(--softSage);
+
+  --button-primary-hover: var(--mutedGreen);
+  --button-secondary-hover: var(--softSage);
+  --button-secondary-border: var(--warmGray);
+
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-geist-sans);
+  color: var(--text-primary);
+  background-color: var(--creamWhite);
+
+  .main {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: var(--foreground);
+  }
+}

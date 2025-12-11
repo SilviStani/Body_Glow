@@ -1,0 +1,63 @@
+@import "../src/app/page.scss";
+
+.NavBarWrapper {
+    background-color: var(--creamWhite);
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
+    .Left {
+        display: flex;
+        width: 30vw;
+        align-items: center;
+        justify-content: center;
+
+        .LogoText {
+            font-size: 1rem;
+        }
+    }
+
+    .Right {
+        display: flex;
+        width: 70vw;
+        align-items: center;
+        justify-content: end;
+
+        .icons {
+            margin: 30px;
+        }
+
+        .LogoText {
+            font-size: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 769px) {
+        .Left {
+            font-size: 0.5rem;
+
+            .LogoText {
+                text-align: center;
+                font-size: 0.8rem;
+            }
+
+            .Logo {
+                height: 2.5rem;
+            }
+        }
+
+        .Right {
+            .LogoText {
+                font-size: 0.8rem;
+            }
+
+            .icons {
+                height: 1.5rem;
+                margin: 10px;
+            }
+        }
+    }
+}
