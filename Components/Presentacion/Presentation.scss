@@ -1,0 +1,56 @@
+@import "../../src/app/page.scss";
+
+.PresentationWrapper {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+
+  .left {
+    height: 40vh;
+    flex: 1.5;
+    background-image: url("/spa_escritorio.jpg");
+    background-size: cover;
+  }
+  .right {
+    background-color: var(--softBeige);
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1, p, .LinkButton{
+        margin-bottom: 2%;
+        text-align: center;
+    }
+    .LinkButton{
+        padding: 10px;
+        background-color: var(--mutedGreen);
+        border-radius: 12px;
+        border: none;
+        button{
+            padding: 5px;
+            background-color: transparent;
+            border: none;
+            color: var(--creamWhite);
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .left {
+        display: none;
+    }
+    background-image: url("/masaje.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .right {
+        background-color: #f8f5f0a9;
+        padding: 5%;
+      .presentacionTitle {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

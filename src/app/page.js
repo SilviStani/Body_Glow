@@ -1,6 +1,7 @@
-import styles from "./page.scss";
-import NavBar from "../../Components/NavBar";
-import Presentation from "../../Components/Presentation";
+import NavBar from "../../Components/NavBar/NavBar";
+import Presentation from "../../Components/Presentacion/Presentation";
+import Servicios from "../../Components/Servicios/Servicios";
+import "./page.scss";
 
 export default function Home() {
   return (
@@ -8,9 +9,7 @@ export default function Home() {
       <main className="main">
         <NavBar />
         <Presentation />
-        <Presentation />
-        <Presentation />
-        <Presentation />
+        <Servicios />
       </main>
     </div>
   );

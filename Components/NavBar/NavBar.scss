@@ -1,4 +1,4 @@
-@import "../src/app/page.scss";
+@import "../../src/app/page.scss";
 
 .NavBarWrapper {
     background-color: var(--creamWhite);
@@ -28,6 +28,7 @@
 
         .icons {
             margin: 30px;
+            height: fit-content !important;
         }
 
         .LogoText {
@@ -51,7 +52,7 @@
 
         .Right {
             .LogoText {
-                font-size: 0.8rem;
+                font-size: 0.9rem;
             }
 
             .icons {

@@ -10,9 +10,6 @@
   --text-primary: var(--mutedGreen);
   --text-secondary: var(--softSage);
 
-  --button-primary-hover: var(--mutedGreen);
-  --button-secondary-hover: var(--softSage);
-  --button-secondary-border: var(--warmGray);
 
   display: flex;
   width: 100vw;
@@ -22,7 +19,7 @@
   font-family: var(--font-geist-sans);
   color: var(--text-primary);
   background-color: var(--creamWhite);
-
+  
   .main {
     display: flex;
     min-height: 100vh;
@@ -30,6 +27,6 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    background-color: var(--foreground);
+    background-color: var(--softBeige);
   }
 }

@@ -1,0 +1,56 @@
+@import "../../src/app/page.scss";
+.ServiciosWrapper{
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--creamWhite);
+
+    .cardContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-around;
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 250px;
+            width: 20vw;
+            background-color: var(--softBeige);
+            padding: 3%;
+            margin-top: 1%;
+            border-radius: 10px;
+            p{
+                margin: 4%;
+            }
+            button{
+                border-radius: 5px;
+                margin-top: 10%;
+                border: none;
+                padding: 10px;
+                background-color: var(--mutedGreen);
+                color: white;
+            }
+        }
+    }
+
+    @media screen and (max-width: 769px) {
+        .card{
+            margin-top: 10% !important;
+            height: 150px !important;
+            width: 100px !important;
+            
+            h3{
+                font-size: 15px;
+            }
+            p{
+                display: none;
+            }
+            
+        }
+    }
+}
